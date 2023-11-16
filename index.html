@@ -14,11 +14,20 @@
     <div id="app">
         <div id="container">
             <!--<img v-for="(gruppo, i) in image" :src="gruppo">--> 
-            <!-- class="img" :class="{ imgActive: (i == slideNumber) }-->
             <img :src="image[current]" alt="">
-        </div>        
-        <button @click="next()">avanti</button>
-        <button @click="back()">indietro</button>
+        </div>
+        <div class="miniwrapper">                
+            <button @click="back()">indietro</button>
+            <button @click="next()">avanti</button>
+        </div>
+        <div id="containerTwo">
+            <h2 v-for="(path, i) in slides" class="invisible" :class="{ visible: (i == current) }">
+                {{slides[current].titolo}}
+            </h2>
+            <span v-for="(path,i) in slides" class="invisible" v-bind:class="{ visible: (i == current)}">
+                {{slides[current].testo}}
+            </span>     
+        </div>
         
                 
     </div>   

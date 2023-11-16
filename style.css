@@ -5,14 +5,27 @@
 }
 body{
     font-family: 'Roboto' , sans-serif;
-    background-color:rgb(37, 40, 42);
+    background-color:rgb(37, 40, 42);   
+}
+h2{
+    color: cadetblue;
 }
 #container{   
     width: 70vw;
     height: 70vh;
     transform: translate(20% , 20%);
-    position: relative;
-    background-color: rgb(72, 59, 84);
+    /*background-color: rgb(77, 77, 107);*/
+}
+#containerTwo{
+    width: 70vw;
+    transform: translate(40% , 250%);
+    /*background-color: rgb(75, 59, 86);*/
+}
+.miniwrapper{
+    width: 50vw;
+    transform: translate(48% , 50%);
+    display: flex;
+    justify-content: space-between;
 }
 img{
     width: 100%;
@@ -21,4 +34,7 @@ img{
 }
 .invisible{
     display: none;
+}
+.visible{
+    display:block;
 }

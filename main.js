@@ -29,13 +29,17 @@ const carousel = {
                     'https://img.freepik.com/free-vector/spring-sale-instagram-post_23-2148849921.jpg',
                     'https://img.freepik.com/free-vector/special-offer-modern-sale-banner-template_1017-20667.jpg'
                 ],
+                title : [
+                    'Benvenuti nel nostro sito',
+                    'Nuova collezione primavera',
+                    'Offerte speciali'
+                ],
                 current : 0 ,
                 visibile : true,         
             }              
         },
         methods: {
-            next() 
-               {
+            next(){
                 if(this.current < this.image.length-1) { 
                      
                     this.current++;
@@ -44,8 +48,7 @@ const carousel = {
                     this.current = 0;    
                 }
                 },          
-            back() 
-            {
+            back(){
                 if(this.current > 0) {
                     //this.image.current.classList.add("invisible")                    
                     this.current--;
@@ -53,7 +56,7 @@ const carousel = {
                 } else {
                     this.current = this.image.length-1;
                 }
-            }
+            },
         }        
 }
 
