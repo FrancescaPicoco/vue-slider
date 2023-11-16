@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto' , sans-serif;
+    background-color:rgb(37, 40, 42);
+}
+#container{   
+    width: 70vw;
+    height: 70vh;
+    transform: translate(20% , 20%);
+    position: relative;
+    background-color: rgb(72, 59, 84);
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.invisible{
+    display: none;
+}

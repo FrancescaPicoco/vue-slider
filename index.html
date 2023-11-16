@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div id="container">
+            <!--<img v-for="(gruppo, i) in image" :src="gruppo">--> 
+            <!-- class="img" :class="{ imgActive: (i == slideNumber) }-->
+            <img :src="image[current]" alt="">
+        </div>        
+        <button @click="next()">avanti</button>
+        <button @click="back()">indietro</button>
+        
+                
+    </div>   
+    <script src="main.js"></script>
+</body>
+</html>
