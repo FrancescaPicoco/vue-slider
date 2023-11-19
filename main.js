@@ -57,6 +57,12 @@ const carousel = {
                     this.current = this.image.length-1;
                 }
             },
+            curr(){
+                for (let i = 0; i < current; i++) {
+                    const indexCurrent = current[i];
+                    
+                }
+            }
         }        
 }
 

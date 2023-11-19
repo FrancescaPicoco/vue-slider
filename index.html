@@ -20,13 +20,16 @@
             <button @click="back()">indietro</button>
             <button @click="next()">avanti</button>
         </div>
-        <div id="containerTwo">
+        <div id="containerTwo"> <!--ciclo l'array ed attacco invisible. se l'idex corrisponde alla corrente sovrascrivi visibile-->
             <h2 v-for="(path, i) in slides" class="invisible" :class="{ visible: (i == current) }">
                 {{slides[current].titolo}}
             </h2>
             <span v-for="(path,i) in slides" class="invisible" v-bind:class="{ visible: (i == current)}">
                 {{slides[current].testo}}
             </span>     
+        </div>
+        <div id=#counter >
+            <h3>{{current}}</h3>
         </div>
         
                 
